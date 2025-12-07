@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define our custom "Nexus" palette here */
+  --color-nexus-bg: #09090b;       /* Deep Zinc Background */
+  --color-nexus-surface: #18181b;  /* Card Surface */
+  --color-nexus-accent: #6366f1;   /* Indigo-500 */
+  --color-nexus-glow: #818cf8;     /* Indigo-400 */
+
+  /* Fonts */
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Custom Animations */
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Global Dark Mode Reset */
+body {
+    background-color: var(--color-nexus-bg);
+    color: #f4f4f5;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+}
